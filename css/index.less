@@ -1,0 +1,391 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 75px;
+}
+
+body,
+html {
+  width: 100%;
+
+  overflow: auto;
+
+  padding: 0;
+  margin: 0;
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+
+
+.container {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .main {
+
+    display: flex;
+    height: 16.6667rem;
+
+    .deviceManager {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .equipment {
+        height: 1.3333rem;
+        border: 10px solid transparent;
+        border-image-source: url(../images/border.png);
+        border-image-slice: 50 50 50 50;
+        border-image-width: auto;
+        margin: 0 10px 10px;
+        display: flex;
+        .EquipmentNumber{
+          flex: 1;
+         
+          .Num{
+            font-size: .4rem;
+            text-align: center;
+            color: white;
+            
+          }
+          .deviceNum{
+            height: .5333rem;
+            display: flex;
+            justify-content: center;
+            span{
+              position: relative;
+              font-size: .2667rem;
+              color: white;
+             
+              &::after{
+                content: "";
+                width: .1333rem;
+                height: .2667rem;
+                background-color: chocolate;
+                position: absolute;
+                left: -0.2rem;
+                top: .0567rem;
+                border-radius: .0667rem;
+                margin:0 .0667rem;
+
+              }
+            }
+          }
+         
+        }
+
+      }
+
+      .chart {
+        flex: 2;
+     
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+
+        .List {
+          flex: 1;
+
+          border: 10px solid transparent;
+          border-image-source: url(../images/border.png);
+          border-image-slice: 50 50 50 50;
+          border-image-width: auto;
+         
+        
+          margin: 0 10px 10px;
+          box-sizing: border-box;
+          padding: 0 .2667rem;
+          overflow: hidden;
+          span{
+            color: white;
+            font-size: .2667rem;
+            margin: 0 .1333rem;
+          }
+          .errorListing{
+            margin-top: .1333rem;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            .title{
+              display: flex;
+              span{
+                flex: 1;
+                text-align: center;
+              }
+            }
+            .AnimationContainer{
+              height: 100%;
+              overflow: hidden;
+              position: relative;
+              margin-bottom: 20px;
+             
+            .faultMessage{
+              
+              padding: .1333rem;
+              position: absolute;
+              width: 100%;
+             
+             
+              .faultMessageList{
+               
+                padding: .1333rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                span{
+                   flex: 1;
+                   text-align: center;
+                   &:nth-child(1){
+                     display: flex;
+                     align-items: center;
+                     &::before{
+                       content: "";
+                       width: .1333rem;
+                       height: .2667rem;
+                       background-color: palegreen;
+                       display: block;
+                       margin-right: .1333rem;
+                       border-radius: 5px;
+                       
+                     }
+                   }
+                   &:nth-child(2){
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                   }
+                }
+              }
+            }
+          }
+          }
+          
+
+        }
+
+        .ItsMessage {
+          flex: 1;
+          border: 10px solid transparent;
+          border-image-source: url(../images/border.png);
+          border-image-slice: 50 50 50 50;
+          border-image-width: auto;
+          margin: 0 10px 10px;
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          padding:  0.2667rem;
+          .inode{
+            color: white;
+            font-size: .4rem;
+          }
+          .dendrogram{
+            flex: 1;
+           
+            display: flex;
+            .Nightingale{
+              flex: 2;
+              // background-color: palegoldenrod;
+            }
+            .PointDeviceInformation{
+              background: url(../images/rect.png) no-repeat;
+              background-size: cover;
+              width: 2.6667rem;
+              display: flex;
+              flex-direction: column;
+              div{
+                flex: 1;
+                color: white;
+                box-sizing: border-box;
+                padding-left: .4rem;
+                p{
+                  font-size: .4rem;
+                  margin-top: .2667rem;
+                }
+                span{
+                  font-size: .2667rem;
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+    }
+
+    .map {
+      // background-color: plum;
+      flex: 1.2;
+      display: flex;
+      flex-direction: column;
+     
+
+      .chinaMap {
+        flex: 1;
+        // background-color: palegreen;
+        border: 10px solid transparent;
+        border-image-source: url(../images/border.png);
+        border-image-slice: 50 50 50 50;
+        border-image-width: auto;
+        margin: 0 10px 10px;
+
+
+      }
+
+      .ListInformation {
+        flex: 1;
+        border: 10px solid transparent;
+        border-image-source: url(../images/border.png);
+        border-image-slice: 50 50 50 50;
+        border-image-width: auto;
+        margin: 0 10px 10px;
+      }
+    }
+
+    .Rightmodule {
+      flex: 1;
+      // background-color: chocolate;
+      display: flex;
+      flex-direction: column;
+
+      .equipment {
+        flex: 1;
+        // background-color: saddlebrown;
+        border: 10px solid transparent;
+        border-image-source: url(../images/border.png);
+        border-image-slice: 50 50 50 50;
+        border-image-width: auto;
+        margin: 0 10px 10px;
+
+
+      }
+
+      .chart {
+        flex: 3;
+        // background-color: darkblue;
+
+        margin: 0 10px 10px;
+        display: flex;
+        flex-direction: column;
+
+        .List {
+          // background-color: olive;
+          border: 10px solid transparent;
+          border-image-source: url(../images/border.png);
+          border-image-slice: 50 50 50 50;
+          border-image-width: auto;
+          margin: 0 10px 10px;
+          flex: 1;
+        }
+
+        .ItsMessage {
+          // background-color: purple;
+          border: 10px solid transparent;
+          border-image-source: url(../images/border.png);
+          border-image-slice: 50 50 50 50;
+          border-image-width: auto;
+          margin: 0 10px 10px;
+          flex: 1;
+         
+        }
+      }
+
+      .ranking {
+        flex: 2;
+        // background-color: palegreen;
+        border: 10px solid transparent;
+        border-image-source: url(../images/border.png);
+        border-image-slice: 50 50 50 50;
+        border-image-width: auto;
+        margin: 0 10px 10px;
+
+
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:1000px) and (min-width:700px) {
+  .deviceManager {
+    display: block !important;
+    flex: 0 !important;
+  }
+  .main {
+    flex-direction: column;
+    height: 40rem !important;
+  }
+
+  .chart {
+    display: flex;
+    flex-direction: row !important;
+    height: 5rem !important;
+    
+  }
+
+
+  .map {
+
+    flex: 1.2;
+    display: flex;
+    height: 20rem;
+  }
+
+  .Rightmodule {
+
+    height: 60rem !important;
+
+    .chart {
+      flex-direction: row !important;
+      flex: 4 !important;
+    }
+  }
+}
+
+@media screen and (max-width:700px) {
+  .header {}
+
+  .main {
+    
+    flex-direction: column;
+    height: 40rem !important;
+  }
+
+  .map {
+
+    flex: 1.2;
+    display: flex;
+    height: 20rem;
+  }
+  .Rightmodule {
+
+    height: 60rem !important;
+
+    .chart {
+      flex: 4 !important;
+    }
+  }
+}
+
