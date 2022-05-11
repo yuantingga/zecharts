@@ -9,11 +9,12 @@
   <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
   <script  src="http://lib.baomitu.com/jquery/3.6.0/jquery.js"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/echarts/4.3.0/echarts.js"></script>
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_2761521_a6olv5j4hps.css">
   <script src="./js/china.js"></script>
   <script src="./js/mymap.js"></script>
   <link rel="stylesheet" href="./css/index.css">
   <script src="./js/index.js"></script>
-  <link rel="stylesheet" href="//at.alicdn.com/t/font_2761521_a6olv5j4hps.css">
+
   
 </head>
 
@@ -65,18 +66,113 @@
       </div>
       <div class="map">
         <div class="chinaMap"></div>
-        <div class="ListInformation"></div>
+        <div class="ListInformation">
+          <div>列表信息图</div>
+          <div class="Listmessage">
+            <div class="column"></div>
+            <div class="PointDeviceInformation">
+              <div>
+                <p>1224</p>
+                <span class="iconfont icon-xiangshang" style="color: red;"></span>
+                <span>设备总数</span>
+              </div>
+              <div>
+                <p>1222</p>
+                <span class="iconfont icon-xiangshang"style="color: red;" ></span>
+                <span>设备总数</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="Rightmodule">
-        <div class="equipment"></div>
-        <div class="chart">
-          <div class="List"></div>
-          <div class="ItsMessage"></div>
+        <div class="equipment">
+         <div> <span data-index="0">90天</span><i>|</i>
+          <span data-index="1">60天</span><i>|</i>
+          <span data-index="2">40天</span><i>|</i>
+          <span data-index="3">30天</span>
         </div>
-        <div class="ranking"></div>
+
+          <div class="device">
+            <!-- <div>
+              <p>23451</p>
+              <span class="iconfont icon-xiangshang"style="color: red;" ></span>
+              <span>设备总数</span>
+            </div>
+            <div>
+              <p>23451</p>
+              <span class="iconfont icon-xiangshang"style="color: red;" ></span>
+              <span>设备总数</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="chart">
+          <div class="List">
+            <div class="title">
+            <p>销售模块</p>
+            <i> |</i>
+            <span data-inn="0" style="background-color: pink;">年</span>
+            <span data-inn="1">月</span>
+            <span data-inn="2">日</span>
+            <span data-inn="3">季</span>
+            </div>
+            <div class="curve"></div>
+          </div>
+          <div class="ItsMessage">
+            <div class="channel">
+
+            </div>
+            <div class="sell">
+              <div> </div>
+              <div class="num">
+                <div class="percent">50%</div>
+                <div>
+                  <p>1212</p>
+                  <div class="zongshu"><span>设备总数</span></div>
+                </div>
+                <div>
+                  <p>42121</p>
+                  <div class="zongshu"><span>设备总数</span></div>
+                </div>
+              </div>
+              
+             
+            </div>
+          </div>
+        </div>
+        <div class="ranking">
+          <div class="title">
+            <span>全国热播</span>
+            <span>各省热销</span>
+            <span>#近30天</span>
+          </div>
+          <div class="bottom">
+            <div class="topSearch">
+              <p><span style="color: red;" class="iconfont icon-jiangbei1"></span>可爱多</p>
+              <p><span style="color: cornflowerblue;" class="iconfont icon-jiangbei1"></span>可爱多</p>
+              <p><span style="color: yellow;" class="iconfont icon-jiangbei1"></span>可爱多</p>
+            </div>
+            <div class="sell">
+              <p>北京<span>22.55%</span><span style="color: red;" class="iconfont icon-xiangshang"></span></p>
+              <p>北京<span>22.55%</span><span style="color: red;" class="iconfont icon-xiangshang"></span></p>
+              <p>北京<span>22.55%</span><span style="color: red;" class="iconfont icon-xiangshang"></span></p>
+              <p>北京<span>22.55%</span><span style="color: red;" class="iconfont icon-xiangshang"></span></p>
+            </div>
+            <div class="day">
+              <!-- <p>北京<span>22.55%</span><span style="color: red;" class="iconfont icon-xiangshang"></span></p>
+              <p>北京<span>22.55%</span><span style="color: red;" class="iconfont icon-xiangshang"></span></p>
+              <p>北京<span>22.55%</span><span style="color: red;" class="iconfont icon-xiangshang"></span></p>
+              <p>北京<span>22.55%</span><span style="color: red;" class="iconfont icon-xiangshang"></span></p> -->
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </body>
+<script>
+  // document.onmouseleave
+</script>
 
 </html>

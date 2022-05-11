@@ -256,43 +256,6 @@ html {
         border-image-slice: 50 50 50 50;
         border-image-width: auto;
         margin: 0 10px 10px;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        padding:  0.2667rem;
-       
-        div{
-          font-size: .5333rem;
-        }
-        .Listmessage{
-          flex: 1;
-          
-          display: flex;
-          .column{
-            flex: 2;
-            // color: ;
-          }
-          .PointDeviceInformation{
-            background: url(../images/rect.png) no-repeat;
-            background-size: cover;
-            width: 2.6667rem;
-            display: flex;
-            flex-direction: column;
-            div{
-              flex: 1;
-              color: white;
-              box-sizing: border-box;
-              padding-left: .4rem;
-              p{
-                font-size: .4rem;
-                margin-top: .2667rem;
-              }
-              span{
-                font-size: .2667rem;
-              }
-            }
-          }
-        }
       }
     }
 
@@ -310,28 +273,6 @@ html {
         border-image-slice: 50 50 50 50;
         border-image-width: auto;
         margin: 0 10px 10px;
-        color: white;
-        padding: .2667rem;
-        display: flex;
-        flex-direction: column;
-        .device{
-          display: flex;
-          div{
-            flex: 1;
-          }
-        }
-        p{
-          font-size: .5333rem;
-          margin-top: .1333rem;
-          margin-left: .4667rem;
-        }
-        span,i{
-          font-style: normal;
-          font-size: .4rem;
-        }
-        i{
-          margin: 0 .2667rem;
-        }
 
 
       }
@@ -343,199 +284,39 @@ html {
         margin: 0 10px 10px;
         display: flex;
         flex-direction: column;
-        color: white;
-       
+
         .List {
           // background-color: olive;
           border: 10px solid transparent;
           border-image-source: url(../images/border.png);
           border-image-slice: 50 50 50 50;
           border-image-width: auto;
-          margin-bottom: 10px;
+          margin: 0 10px 10px;
           flex: 1;
-          padding: .2667rem;
-          .title{
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            p{
-              font-size: .4rem;
-            }
-            i{
-              margin:  0 .2667rem;
-              font-size: .4rem;
-              font-style: normal;
-            }
-            span{
-              padding:  0 .4rem;
-              font-size: .4rem;
-              
-            }
-
-          }
-          .curve{
-            height: 3rem;
-          }
         }
 
         .ItsMessage {
-          
-          height: 4rem;
-          display: flex;
-          .channel{
-            margin-right: .2667rem;
-          }
-          .channel,.sell{
-            border: 10px solid transparent;
-            border-image-source: url(../images/border.png);
-            border-image-slice: 50 50 50 50;
-            border-image-width: auto;
-            flex: 1;
-          }
-          .sell{
-            display: flex;
-            flex-direction: column;
-           
-            div{
-              &:first-child{
-                flex: 2;
-              }
-              
-            }
-            .num{
-              flex: 1;
-              position: relative;
-              display: flex;
-             
-              .percent{
-                position: absolute;
-                left: 40%;
-                top: -0.6667rem;
-                font-size: .4rem;
-
-              }
-              div{
-                flex: 1;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-
-               
-                p{
-                  font-size: .4rem;
-
-                }
-                .zongshu{
-                 
-                  span{
-                    font-size: .2933rem;
-                    float: left;
-                    &::before{
-                      content: "";
-                      width: .1333rem;
-                      height: .2667rem;
-                      background-color: palegreen;
-                      display: block;
-                      float: left;
-                      border-radius: 5px;
-                      margin-top: .0667rem;
-                      margin-right: .0667rem;
-                      
-                    }
-                  }
-                }
-              }
-            }
-           
-            
-          }
-          
-   
+          // background-color: purple;
+          border: 10px solid transparent;
+          border-image-source: url(../images/border.png);
+          border-image-slice: 50 50 50 50;
+          border-image-width: auto;
+          margin: 0 10px 10px;
+          flex: 1;
+         
         }
       }
 
       .ranking {
-        height: 3.3333rem;
+        flex: 2;
         // background-color: palegreen;
         border: 10px solid transparent;
         border-image-source: url(../images/border.png);
         border-image-slice: 50 50 50 50;
         border-image-width: auto;
-        margin: 0 10px;
-        margin-bottom: 10px;
-        color: white;
-        padding: .2667rem;
-        display: flex;
-        flex-direction: column;
-        .title{
-          display: flex;
-          justify-content: space-between;
-          text-align: center;
-          margin-bottom: .1333rem;
-          // background: ;
-          span{
-            flex: 1;
-            font-size: .3333rem;
-          }
-        }
-        .bottom{
-          display: flex;
-          flex: 2;
-          justify-content: space-between;
-          div{
-            justify-content: space-between;
-          }
-          .topSearch{
-            font-size: .2667rem;
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            
-           p{
-            display: flex;
-            align-items: center;
-            flex: 1;
-            margin: 0 auto;
-          
-           }
-            span{
-              font-size: .6667rem;
-             
-            }
-          }
-          .sell{
-            flex: 1;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-           
-            p{
-              flex: 1;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              color: cornflowerblue;
-            }
-          }
-          .day{
-            flex: 1;
-            flex: 1;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            background: url(../images/rect.png) no-repeat;
-            background-size: cover;
-           
-            p{
-              flex: 1;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              color: aqua;
-            }
-          }
-        }
-        
+        margin: 0 10px 10px;
+
+
       }
     }
   }
@@ -547,25 +328,23 @@ html {
 
 
 
-@media screen and (max-width:1500px) and (min-width:700px) {
+@media screen and (max-width:1000px) and (min-width:700px) {
+  .deviceManager {
+    display: block !important;
+    flex: 0 !important;
+  }
   .main {
     flex-direction: column;
     height: 40rem !important;
   }
-  .deviceManager {
-    display: block !important;
-    flex: 0 !important;
-    .chart {
-      display: flex;
-      flex-direction: row !important;
-      height: 5rem !important;
-      
-    }
-  
-  }
- 
 
- 
+  .chart {
+    display: flex;
+    flex-direction: row !important;
+    height: 5rem !important;
+    
+  }
+
 
   .map {
 
@@ -577,20 +356,15 @@ html {
   .Rightmodule {
 
     height: 60rem !important;
-   .equipment{
-    span,i{
-      font-size: .3333rem !important;
-    }
-   }
+
     .chart {
-      
+      flex-direction: row !important;
       flex: 4 !important;
     }
-
   }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:700px) {
   .header {}
 
   .main {
@@ -607,8 +381,10 @@ html {
   }
   .Rightmodule {
 
-    .chart{
-      flex-direction: column !important;
+    height: 60rem !important;
+
+    .chart {
+      flex: 4 !important;
     }
   }
 }
