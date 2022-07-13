@@ -27,7 +27,7 @@ html {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
+  overflow: auto;
   .header {
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@ html {
     height: 16.6667rem;
 
     .deviceManager {
-      flex: 1;
+      flex: 1.2;
       display: flex;
       flex-direction: column;
 
@@ -93,11 +93,9 @@ html {
       }
 
       .chart {
-        flex: 2;
-     
         display: flex;
         flex-direction: column;
-        height: 15rem;
+        height: 100%;
 
         .List {
           flex: 1;
@@ -245,6 +243,7 @@ html {
         border-image-slice: 50 50 50 50;
         border-image-width: auto;
         margin: 0 10px 10px;
+        height: 3.3333rem;
 
 
       }
@@ -354,6 +353,7 @@ html {
           margin-bottom: 10px;
           flex: 1;
           padding: .2667rem;
+          height: 2.6667rem;
           .title{
             display: flex;
             align-items: center;
@@ -393,6 +393,7 @@ html {
             flex: 1;
           }
           .sell{
+           
             display: flex;
             flex-direction: column;
            
@@ -409,9 +410,10 @@ html {
              
               .percent{
                 position: absolute;
-                left: 40%;
-                top: -0.6667rem;
+                left: 45%;
+                transform: translateY(-50%);
                 font-size: .4rem;
+                top: -0.4rem;
 
               }
               div{

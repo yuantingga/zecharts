@@ -530,7 +530,7 @@ $('.device').html('')
     clearInterval(obj.cutTime)
   })
   $('.List').on('mouseleave touchend',function (e) { 
-   console.log("开始");
+  
     cut(inn+1)
   })
   cut(inn)
@@ -793,9 +793,8 @@ $(".bottom .sell").on("mouseleave touchend",function () {
       $(".day").html('')
       $(".day").html('')
       $.each(topDate[num],function (index,ele) {
-           console.log(ele);
-           const p=`<p>${ele[0]}<span>${ele[1]}</span><span style="color: red;" class="iconfont icon-xiangshang"></span></p>`
-           console.log(p);
+              const p=`<p>${ele[0]}<span>${ele[1]}</span><span style="color: red;" class="iconfont icon-xiangshang"></span></p>`
+    
            $(".day").append(p)
      })
      num++
